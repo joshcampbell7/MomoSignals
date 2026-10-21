@@ -23,6 +23,10 @@ Content-Type: application/json
 
 Start that API from the Valorant project, not from this repo.
 
+Notes:
+
+- Production docs: https://valorant-prediction-model.onrender.com/docs#/
+
 ## Frontend
 
 From the project root:
