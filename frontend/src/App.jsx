@@ -10,13 +10,13 @@ function App() {
     if (!url) return
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/markets', {
+      const response = await fetch('http://127.0.0.1:8000/momo-signals', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
       })
       const body = await response.json()
-      console.log(body)
+      console.log(body.output ?? body)
     } catch (error) {
       console.log(error)
     }
